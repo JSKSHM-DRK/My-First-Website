@@ -1,0 +1,204 @@
+@import url("./style.css");
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto 4rem auto 4rem;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.contact-heading {
+  display: flex;
+  font-size: 9em;
+  color: var(--white);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 4px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -1.5rem;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  column-gap: 0.3rem;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  border: 0;
+  padding: 1rem;
+  outline: none;
+  background: var(--liteblack);
+  color: var(--white);
+  font-size: 40px;
+  font-family: "Dongle", sans-serif;
+  border-radius: 15px;
+}
+
+form ::placeholder {
+  color: var(--white);
+}
+
+form input {
+  resize: none;
+  height: 90px;
+  width: 396px;
+}
+
+form button {
+  padding: 1rem;
+  background: var(--liteblack);
+  color: var(--white);
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  border-radius: 1rem;
+  text-align: left;
+  border: none;
+  height: 90px;
+  width: 240px;
+}
+
+textarea {
+  resize: none;
+  height: 300px;
+  width: 800px;
+  grid-column: 1/3;
+}
+
+.mail-svgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mail-svgs div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mail-sent-message {  
+  position: absolute;
+  top: -1rem;
+  bottom: 0;
+  left: 2rem;
+  right: 0;
+  margin: auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: var(--dongle);
+  font-size: 5rem;
+  opacity: 0;
+}
+
+.mail-sent-message {
+  transition: all linear 2s;
+}
+
+.mob-mail-svg {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-heading {
+    font-size: 7em;
+    padding-left: 5.1%;
+  }
+
+  .mail-svgs {
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .contact-heading {
+    font-size: 8em;
+    padding-left: 2%;
+  }
+
+  form input {
+    resize: none;
+    height: 90px;
+    width: 300px;
+  }
+
+  textarea {
+    resize: none;
+    height: 300px;
+    width: 605px;
+    grid-column: 1/3;
+  }
+
+  form button {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .contact-section {
+    margin: 8rem 1rem auto 1rem;
+  }
+
+  .contact-heading {
+    font-size: 6em;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .contact-form form {
+    margin: 1rem auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    row-gap: 0.4rem;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    margin: auto;
+    height: auto;
+  }
+
+  .contact-form form textarea {
+    resize: none;
+    width: 300px;
+    grid-column: 1/1;
+    margin: auto;
+    height: 250px;
+  }
+
+  form button {
+    margin: auto;
+  }
+
+  .mail-svgs {
+    display: none;
+  }
+
+  .mob-mail-svg {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    place-content: center;
+  }
+}

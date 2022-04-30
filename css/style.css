@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--black);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 900px) {
+.active-navbar {
+  overflow-y: hidden;
+}
+}
+:root {
+  --black: #0b0c10;
+  --grey: #1f2833;
+  --white: #fff;
+  --liteblack: #18191c;
+  
+  ---header-grey: #1f2833f1;;
+  --dongle: "Dongle", sans-serif;
+}

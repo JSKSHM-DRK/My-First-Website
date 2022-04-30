@@ -1,0 +1,43 @@
+@import url(./style.css);
+
+footer {
+  display: flex;
+  background: var(--grey);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  font-family: "Dongle", sans-serif;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+}
+
+footer p {
+  display: flex;
+  color: var(--white);
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  line-height: 2.5rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 769px) {
+  footer {
+    flex-direction: column;
+  }
+}

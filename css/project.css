@@ -1,0 +1,98 @@
+@import url("./style.css");
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto 2rem auto;
+  width: 90vw;
+  padding-top: 6rem;
+  position: relative;
+}
+
+
+.project-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.project-heading p {
+  text-align: center;
+  font-size: 8em;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  margin-right: 0.5rem;
+}
+
+.project-grid-container {
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr;
+  margin: 1.5rem auto;
+  gap: 1rem;
+}
+
+.grid-item img {
+  width: 90%;
+}
+
+.grid-item {
+  display: flex;
+  place-content: center;
+}
+
+.first-project {
+  margin: auto;
+  grid-column: 1/3;
+}
+
+.second-project {
+  margin-right: 2.5rem;
+}
+
+.third-project {
+  margin-left: 2.5rem;
+}
+
+.first-project:hover, .second-project:hover, .third-project:hover{
+  transform: scale(103%);
+  transition: all linear .5s;
+}
+
+@media screen and (max-width: 528px) {
+  .project-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .project-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .project-heading p {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .project-grid-container div img {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    place-content: center;
+  }
+
+  .first-project {
+    margin: auto;
+    grid-column: 1/1;
+  }
+
+  .second-project,
+  .third-project {
+    margin: auto;
+  }
+}

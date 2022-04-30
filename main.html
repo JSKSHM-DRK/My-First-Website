@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saksham Jhamb</title>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/skill.css" />
+    <link rel="stylesheet" href="./css/skill-dev.css" />
+    <link rel="stylesheet" href="./css/skill-update.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/icon.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/bg.css">
+  </head>
+  <body>
+       <div class="area" >
+             <ul class="circles">
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+             </ul>
+        </div >
+    <!-- NavBar -->
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./images/logo.svg" alt="logo" /></a>
+      </div>
+      <ul class="nav-ul">
+        <a href="#about-section" class="nav-anchor">
+          <li class="nav-li">About</li>
+        </a>
+        <a href="#project-section" class="nav-anchor">
+          <li class="nav-li">Projects</li>
+        </a>
+        <a href="#skill-section" class="nav-anchor">
+          <li class="nav-li">Skills</li>
+        </a>
+        <a href="#contact-section" class="nav-anchor">
+          <li class="nav-li">Contact</li>
+        </a>
+      </ul>
+      <div class="hamburger">
+        <div class="ham ham-1"></div>
+        <div class="ham ham-2"></div>
+        <div class="ham ham-3"></div>
+      </div>
+    </header>
+    <section class="about-section" id="about-section">
+      <p class="about-first-p">Hello,I'm Saksham Jhamb.</p>
+      <p class="about-second-p">I'm a Learner.</p>
+    </section>
+    <!-- Project Section -->
+    <section class="project-section" id="project-section">
+      <div id="Projects" class="project-heading">
+        <img src="./images/project complete.svg" alt="" />
+        <p>Projects</p>
+      </div>
+      <div class="project-grid-container">
+        <div class="grid-item first-project">
+          <a href=""
+            ><img src="./images/football icon.svg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item second-project">
+          <a href="/"
+            ><img src="./images/ethereum icon.svg" alt=""
+          /></a>
+        </div>
+        <div class="grid-item third-project">
+          <a href="card.html"
+            ><img src="./images/profile icon.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- skill develop illustration -->
+    <section>
+      <div class="skill-develop">
+        <img src="./images/skills developement.svg" alt="" />
+      </div>
+    </section>
+    <!-- Skill Project -->
+    <section class="skill-section" id="skill-section">
+      <div id="Skills" class="skill-heading">
+        <img src="./images/skills logo.svg" alt="" />
+        <p>Skills</p>
+      </div>
+      <div class="skill-grid-container">
+        <div class="grid-item first-skill">
+          <a href="https://www.w3schools.com/html/"><img src="./images/logo html.svg" alt="" /></a>
+        </div>
+        <div class="grid-item second-skill">
+          <a href="https://www.figma.com/"><img src="./images/logo figma.svg" alt="" /></a>
+        </div>
+        <div class="grid-item third-skill">
+          <a href="https://www.w3schools.com/css/"><img src="./images/logo css.svg" alt="" /></a>
+        </div>
+      </div>
+      <!-- Skill Update Illustration -->
+      <div class="skill-update">
+        <img src="./images/skill updating.svg" alt="" />
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="contact-section" id="contact-section">
+      <img class="mob-mail-svg" src="./images/Mail.svg" alt="" />
+      <div id="Contact" class="contact-heading">Contact</div>
+      <div class="contact-form">
+        <form onsubmit="sendEmail(); reset(); return false">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea
+            id="message"
+            placeholder="What i can do for you?"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="mail-svgs">
+          <img class="mail" src="./images/Mail.svg" alt="" />
+          <div>
+            <img class="loading" src="./images/Mail Loading.svg" alt="" />
+            <h2 class="mail-sent-message">mail sent</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <div class="wrapper">
+        <div class="icon discord">
+          <a href="https://discord.gg/"
+            ><span><i class="fa-brands fa-discord"></i></span
+          ></a>
+        </div>
+        <div class="icon instagram">
+          <a href="https://www.instagram.com//"
+            ><span><i class="fa-brands fa-instagram"></i></span
+          ></a>
+        </div>
+        <div class="icon twitter">
+          <a href="https://twitter.com/"
+            ><span><i class="fa-brands fa-twitter"></i></span
+          ></a>
+        </div>
+        <div class="icon linkedin">
+          <a href="https://www.linkedin.com/in//"
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </div>
+        <div class="icon github">
+          <a href="https://github.com/JSKSHM-DRK"
+            ><span><i class="fa-brands fa-github"></i></span
+          ></a>
+        </div>
+      </div>
+      <p>All Rights Reserved @SakshamJhamb & DakshJhamb</p>
+      <a href="index.html"
+        ><img class="footer-logo" src="./images/logo.svg" alt=""
+      /></a>
+    </footer>
+    <!-- Script -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script text="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "saksham4133@gmail.com",
+          Password: "wijhziadftbslxcu",
+          To: "contact.jhamb.saksham2408.com",
+          From: document.getElementById("email").value,
+          Subject: "New Contact Form Enquiry",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "<br> Email: " +
+            document.getElementById("email").value +
+            "<br> Message: " +
+            document.getElementById("message").value,
+        }).then((message)=> console.log('message sent successfully'))
+
+        const mailSentMessage = document.querySelector('.mail-sent-message')
+        mailSentMessage.style.opacity = '1'
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/6b51a0745f.js" crossorigin="anonymous"></script>
+    <script src="./script/nav.js"></script>
+    <script src="./script/submit.js"></script>
+  </body>
+</html>

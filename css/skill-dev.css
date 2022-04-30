@@ -1,0 +1,25 @@
+.skill-develop {
+    display: flex;
+    margin: 10.5rem 0;
+    margin-right: 3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 769px) {
+    .skill-develop {
+      display: flex;
+      margin: 8rem 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 528px) {
+    .skill-develop {
+      display: none;
+    }
+  }

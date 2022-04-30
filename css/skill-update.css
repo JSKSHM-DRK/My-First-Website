@@ -1,0 +1,23 @@
+.skill-update {
+    display: flex;
+    margin: 8rem 0;
+    flex-direction: row;
+    justify-content: start;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 769px) {
+    .skill-update {
+      display: flex;
+      margin: 8rem 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+    }
+  }
+  
+  @media screen and (max-width: 528px) {
+    .skill-update {
+      display: none;
+    }
+  }
